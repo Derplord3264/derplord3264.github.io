@@ -6,7 +6,7 @@ body {
   padding:0;
   font-family: sans-serif;
   color: white;
-  background: url(./background.jpg) no-repeat;
+  background: url("https://derplord3264.github.io/background.jpg") no-repeat;
   /* Keep the inherited background full size. */
   background-attachment: fixed; 
   background-size: cover;
