@@ -5,7 +5,7 @@ body {
   margin:0;
   padding:0;
   font-family: sans-serif;
-  background: linear-gradient(60deg, rgb(105, 102, 102) 0%, rgb(0, 0, 0) 100%);
+  background: url("https://derplord3264.github.io/background.jpg") no-repeat;
 }
 
 .chat-box {
