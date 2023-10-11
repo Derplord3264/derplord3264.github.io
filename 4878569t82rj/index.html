@@ -1,43 +1,30 @@
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-    <title>full screen iframe</title> 
-    <style type="text/css"> 
-        html { 
-            overflow: auto; 
-        } 
-          
-        html, 
-        body, 
-        div, 
-        iframe { 
-            margin: 0px; 
-            padding: 0px; 
-            height: 100%; 
-            border: none; 
-        } 
-          
-        iframe { 
-            display: block; 
-            width: 100%; 
-            border: none; 
-            overflow-y: auto; 
-            overflow-x: hidden; 
-        } 
-    </style> 
-</head> 
-  
-<body> 
-    <iframe src="https://scaling-memory-jp5vxj5gvr7c5wxw-8081.app.github.dev/"
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0" 
-            width="100%" 
-            height="100%" 
-            scrolling="auto"> 
-  </iframe> 
-  
-</body> 
-  
-</html> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eaglecraft | 1.18</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="webgl-frame" src="scaling-memory-jp5vxj5gvr7c5wxw-8081.app.github.dev" frameborder="0" allowfullscreen="true"></iframe>
+
+  <script>
+    var iframe = document.getElementById('webgl-frame');
+    iframe.style.width = window.innerWidth + "px";
+    iframe.style.height = window.innerHeight + "px";
+
+    window.addEventListener('resize', function() {
+      iframe.style.width = window.innerWidth + "px";
+      iframe.style.height = window.innerHeight + "px";
+    });
+  </script>
+</body>
+</html>
